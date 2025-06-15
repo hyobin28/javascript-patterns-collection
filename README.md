@@ -34,6 +34,7 @@ Occupant(승객), Taxi(택시), CallTaxiApp(앱 퍼사드), Login(로그인), Ta
 예: Occupant.information(), Taxi.approval(), TaxiAlarm.notify() 등
 
 
+
 2. 추상화와 상속 활용
 팩토리 패턴을 통한 객체 생성 추상화
 
@@ -43,6 +44,7 @@ OccupantFactory는 승객 이름에 따라 서로 다른 승객 객체(Occupant_
 프로토타입 기반 상속과 클래스 구조로 역할을 분리
 
 각 승객 클래스가 OccupantFactory를 상속받아 출발지, 목적지, 택시 종류 등 공통 속성을 가집니다.
+
 
 
 3. 디자인 패턴 적용
@@ -60,6 +62,7 @@ OccupantFactory.factory() 메서드로 승객 정보를 입력받아, 상황에 
 
 TaxiAlarm이 Subject, Observer가 옵저버 역할을 하며,
 앱의 상태 변화(로그인, 호출, 도착 등)에 따라 알림을 구독자에게 전달합니다.
+
 
 
 4. 기능별 추상화
